@@ -105,7 +105,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // get the user's choice
     AsyncStorage.getItem("darkMode").then((value) => {
       if (value) setIsDarkMode(JSON.parse(value));
     });
