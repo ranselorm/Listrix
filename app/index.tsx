@@ -1,23 +1,11 @@
-import Test from "@/components/Test";
-import { router } from "expo-router";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Page() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="text-2xl text-center mb-4 bg-yellow-400">
-        Edit app/index.tsx to edit.
+    <View className="flex-1 items-center justify-center bg-white dark:bg-gray-900">
+      <Text className="text-2xl text-center mb-4 bg-yellow-400 p-4">
+        This is the index page
       </Text>
-      <TouchableOpacity onPress={() => router.push("/(tabs)")}>
-        <Text className="mt-20">Go to Home</Text>
-      </TouchableOpacity>
-      <Test />
     </View>
   );
 }
