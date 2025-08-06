@@ -1,7 +1,7 @@
 import { router } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
 
-export default function Index() {
+export default function Page() {
   return (
     <View
       style={{
@@ -14,7 +14,7 @@ export default function Index() {
         Edit app/index.tsx to edit.
       </Text>
       <TouchableOpacity onPress={() => router.push("/(tabs)")}>
-        <Text>Go to Home</Text>
+        <Text className="text-3xl">Go to Home</Text>
       </TouchableOpacity>
     </View>
   );
