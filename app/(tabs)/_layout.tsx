@@ -4,6 +4,7 @@ import { Tabs } from "expo-router";
 
 export default function TabsLayout() {
   const { colors } = useTheme();
+
   return (
     <Tabs
       screenOptions={{
@@ -19,7 +20,7 @@ export default function TabsLayout() {
         },
         tabBarLabelStyle: {
           fontSize: 12,
-          fontWeight: 600,
+          fontWeight: 400,
         },
       }}
     >
