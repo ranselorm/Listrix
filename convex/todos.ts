@@ -63,7 +63,7 @@ export const deleteTodo = mutation({
 });
 
 //delete all todos
-export const deleteAllTodos = mutation({
+export const clearAllTodos = mutation({
   handler: async (ctx) => {
     const todos = await ctx.db.query("todos").collect();
     if (todos.length === 0) throw new ConvexError("No todos to delete");
